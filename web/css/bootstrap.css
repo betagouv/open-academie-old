@@ -4401,6 +4401,8 @@ a.list-group-item.active > .badge,
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 63px;
+    color: white;
+    text-align: center;
   }
 }
 .thumbnail {
