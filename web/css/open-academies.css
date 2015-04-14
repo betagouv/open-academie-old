@@ -16,3 +16,10 @@ p.open-ac-subheader-text {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.simple-sep {
+  border: 0;
+  border-top: 1px solid #53555c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
