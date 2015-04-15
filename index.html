@@ -107,8 +107,8 @@
                 <h3>MobiliSCO : les voyages scolaires cessent d'être un cauchemar.</h3>
               </div>
               <form id="input-form" action="" method="POST" target="no-target">
-                <input id="input-name" placeholder="enter name" name="name">
-                <button id="form-submit" type="submit">SUBMIT</button>
+                <input id="input-name" placeholder="Entrez votre code Etablissement" name="name">
+                <button id="form-submit" type="submit">Télécharger MobiliSCO</button>
               </form>
             </div>
             <hr class="simple-sep">
@@ -146,19 +146,22 @@
         </div>
       </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--This ghost iframe is used to avoid open a new tab when posting to google form -->
+<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $('#input-form').one('submit',function(){
+        var inputName = encodeURIComponent($('#input-name').val());
+        var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
+        var submitRef = '&submit=submit';
+        var submitURL = (baseURL + inputName + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        console.log('done');
+        window.location.assign('https://nodejs.org/jsconf2010.pdf');
+    });
+</script>
 
-
-                  <script>
-                  var spreadsheetUrl = 'https://script.google.com/macros/s/AKfycbxxvDqH8faUyS8dSYTasNYlU4--9LvOWlC1nBom_uQURpBvv6o/exec';
-
-                  $('#input-form').one('submit',function(){
-                      $.post(spreadsheetUrl, { 'my_column': "John", 'bbb':'TOTO'})
-                        .done(function(result) {
-                        console.log(result);
-                      });
-                  });
-              </script>
     </body>
 </html>
