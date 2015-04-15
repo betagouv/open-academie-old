@@ -23,3 +23,7 @@ p.open-ac-subheader-text {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+#input-name {
+  width: 280px;
+}
