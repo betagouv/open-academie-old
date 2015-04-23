@@ -6,16 +6,17 @@
 .open-ac-subheader {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .open-ac-subheader h1 {
   color: white;
   text-align: center;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.71);
 }
 
 .open-ac-subheader-text {
-  text-shadow: 0 1px 0 rgba(0,0,0,.1)
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.71);
 }
 
 .open-ac-subheader-text p {
@@ -33,7 +34,7 @@
 .my-service-wrapper {
   display: inline-block;
   width: 100%;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.90);
   text-align: center;
   padding: 30px 20px;
   -webkit-background-clip: padding-box;
