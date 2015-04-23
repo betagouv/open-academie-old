@@ -1,24 +1,150 @@
-.open-ac-subheader {
-  height: 400px;
+.my-mainmenu-wrapper {
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.34);
 }
 
-p.open-ac-subheader-text {
-  color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
-  line-height: 1.5em;
-  margin: 30px 0;
-  padding-left: 10px;
+.open-ac-subheader {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.open-ac-subheader h1 {
+  color: white;
   text-align: center;
 }
 
-.nav-oa {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.open-ac-subheader-text {
+  text-shadow: 0 1px 0 rgba(0,0,0,.1)
+}
+
+.open-ac-subheader-text p {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  padding: 0;
+}
+
+.open-ac-subheader-text p strong {
+  font-size: 1.3em;
+}
+
+.my-service-wrapper {
+  display: inline-block;
+  width: 100%;
+  background: #FFF;
+  text-align: center;
+  padding: 30px 20px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+
+  -webkit-box-shadow: 0 1px 3px #999;
+  -moz-box-shadow: 0 1px 3px #999;
+  box-shadow: 0 1px 3px #999;
+  color: 0 1px 3px #999;
+}
+
+.my-service-wrapper h2 {
+  font-size: 1.2em;
+  margin: 0;
+  border-bottom: none;
+}
+
+.my-service-wrapper h2 span {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.my-service-wrapper:hover {
+  text-decoration: none;
+  background-color: whitesmoke;
+}
+
+.my-service-wrapper:hover h2 span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .my-service-wrapper {
+    padding: 10px 5px;
+    margin: 10px 5px;
+  }
+}
+
+.my-section {
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 0 !important;
+  background-color: rgba(255, 255, 255, 0.40);
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 1px 3px #999;
+  -moz-box-shadow: 0 1px 3px #999;
+  box-shadow: 0 1px 3px #999;
+  color: 0 1px 3px #999;
+}
+
+.my-section h2 {
+  border-bottom: none;
+  padding: 0;
+  margin: 0;
+  padding: 20px 10px 10px 10px;
+}
+
+.my-section h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.my-section .content {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid #E8E8E8;
+  padding: 20px;
+}
+
+.my-section .content-outils {
+  display: block;
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid #E8E8E8;
+  padding: 20px;
+}
+
+.blockquote-reverse {
+  text-align: right;
+}
+
+.my-section .content .description {
+  width: 50%;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .nav-section {
+    padding: 30px 0;
+  }
+}
+
+ul.logos {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+ul.logos li {
+  margin-right: 15px;
+  float: left;
 }
 
 .simple-sep {
   border: 0;
+<<<<<<< HEAD
   border-top: 1px solid #53555c;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -26,4 +152,8 @@ p.open-ac-subheader-text {
 
 #input-name {
   width: 280px;
+=======
+  border-top: 1px solid #E2E2E2;
+  margin: 40px 60px;
+>>>>>>> ui
 }
