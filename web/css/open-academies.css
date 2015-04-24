@@ -145,16 +145,10 @@ ul.logos li {
 
 .simple-sep {
   border: 0;
-<<<<<<< HEAD
-  border-top: 1px solid #53555c;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  border-top: 1px solid #E2E2E2;
+  margin: 40px 60px;
 }
 
 #input-name {
   width: 280px;
-=======
-  border-top: 1px solid #E2E2E2;
-  margin: 40px 60px;
->>>>>>> ui
 }
