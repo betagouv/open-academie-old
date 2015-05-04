@@ -96,6 +96,10 @@
   margin-bottom: 20px;
 }
 
+.my-section p {
+  font-size: 1.8rem;
+}
+
 .my-section .content {
   display:flex;
   flex-direction: row;
