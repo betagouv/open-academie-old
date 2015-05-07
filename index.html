@@ -15,10 +15,7 @@
   <link rel="stylesheet" href="web/css/icomoon-social.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="web/css/leaflet.css" />
-  <!--[if lte IE 8]>
-      <link rel="stylesheet" href="css/leaflet.ie.css" />
-  <![endif]-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="web/css/main.css">
 
   <script src="web/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -74,126 +71,164 @@
   </div>
   <!-- End Jumbotron -->
 
-  <div class="container">
-    <div class="my-section" id="map">
-      <h2>La modernisation de l'action publique</h2>
+  <div class="my-section" id="map">
+    <!-- <h2>La modernisation de l'action publique</h2> -->
+    <div class="my-section-title valeurs">
+      <div class="container">
+        <h2>Nos valeurs</h2>
+      </div>
+    </div>
+    <div class="container">
       <div class="content">
-        <div class="description">
-          <h3>Nos valeurs</h3>
-          <p>
-            Construire le lycée et le collège de demain avec les personnels d'aujourd'hui, en pariant sur l'intelligence locale, l'humilité déterminée, l'action concrète et l'amélioration continue.
-          </p>
-          <p>
-            Faire simple et plus fluide pour les usagers, plus collaboratif et responsabilisant pour les agents, réduire les cloisonnements, partager les données.
-          </p>
+        <div class="row">
+          <div class="col-sm-7">
+            <blockquote class="valeurs">
+              <i class="fa fa-quote-left"></i>
+              Construire le lycée et le collège de demain avec les personnels d'aujourd'hui, en pariant sur l'intelligence locale, l'humilité déterminée, l'action concrète et l'amélioration continue.<i class="fa fa-quote-right"></i>
+            </blockquote>
+          </div>
+          <div class="col-sm-5">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/inRgbcZJo6o" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="my-media">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/inRgbcZJo6o" frameborder="0" allowfullscreen></iframe>
+        <!-- <p>
+          Faire simple et plus fluide pour les usagers, plus collaboratif et responsabilisant pour les agents, réduire les cloisonnements, partager les données.
+        </p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="my-section" id="outils">
+    <div class="my-section-title outils">
+      <div class="container">
+        <h2>Les outils</h2>
+        <!-- <h2>Des outils pour faciliter la vie des usagers et des agents</h2> -->
+      </div>
+    </div>
+
+    <div class="my-section-subtitle mobilisco">
+      <div class="container">
+        <img src="web/img/MobiSCO.png">
+        <h3>Les voyages scolaires cessent d'être un cauchemar</h3>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="content">
+        <blockquote>“ Tout est déjà paramétré dans MobiliSCO, on n'a plus à créer les listes à la main. ça nous mâche le travail ! ”
+          <footer>Myriam BARTHEL, collège Albert CAMUS, Thiais (94)</footer>
+        </blockquote>
+        <blockquote>“ Enfin un outil créé par des utilisateurs pour des utilisateurs et qui évolue en fonction des remarques de chacun. Attention son utilisation comporte un risque : l'addiction vous guette et peut vous faire aimer les voyages scolaires. ”
+          <footer>Aude SAINT-GRATIEN, collège BARBOT, Metz (57)</footer>
+        </blockquote>
+        <div class="text-right">
+          <form id="input-form" action="" method="POST" target="no-target" class="form-inline">
+            <input id="input-name" class="form-control" placeholder="Code Etablissement ou Adresse Email " type="text" name="name" size="45" required>
+            <button id="form-submit" class="btn btn-primary" type="submit">Télécharger MobiliSCO</button>
+          </form>
         </div>
       </div>
     </div>
 
-    <div class="my-section" id="outils">
-      <h2>Les outils</h2>
-      <div class="content-outils">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="web/img/logos/mobilisco-cut.png" height="200px">
-          </div>
-          <div class="col-sm-8">
-            <h3>MobiliSCO : les voyages scolaires cessent d'être un cauchemar.</h3>
-            <blockquote>“ Tout est déjà paramétré dans MobiliSCO, on n'a plus à créer les listes à la main. ça nous mâche le travail ! ”
-              <footer>Myriam BARTHEL, collège Albert CAMUS, Thiais (94)</footer>
-            </blockquote>
-            <blockquote>“ Enfin un outil créé par des utilisateurs pour des utilisateurs et qui évolue en fonction des remarques de chacun. Attention son utilisation comporte un risque : l'addiction vous guette et peut vous faire aimer les voyages scolaires. ”
-              <footer>Aude SAINT-GRATIEN, collège BARBOT, Metz (57)</footer>
-            </blockquote>
-            <div class="text-right">
-              <form id="input-form" action="" method="POST" target="no-target" class="form-inline">
-                <input id="input-name" class="form-control" placeholder="Code Etablissement ou Adresse Email " type="text" name="name" size="45" required>
-                <button id="form-submit" class="btn" type="submit">Télécharger MobiliSCO</button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div class="my-section-subtitle gemasco">
+      <div class="container">
+        <img src="web/img/GemaSCO.png">
+        <h3>L'application qui commande, distribue, récupère les manuels et fait même l'inventaire !</h3>
+      </div>
+    </div>
 
-        <hr class="simple-sep">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="web/img/logos/gemasco-cut.png" height="200px">
-          </div>
-          <div class="col-sm-8">
-            <h3>GemaSCO : l'application qui commande, distribue, récupère les manuels et fait même l'inventaire !</h3>
-            <blockquote>“ Depuis qu'on a installé GEMASCO, chaque élève a ses manuels en propre. Et quand un prof ramène un livre perdu, on sait tout de suite à qui il est. ”
-              <footer>Stéphane FRANCHETTI, Lycée Pauline ROLAND, Chevilly-Larue (94)</footer>
-            </blockquote>
-            <div class="text-right">
-              <a class="btn" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20GemaSCO">Nous contacter à propos de GemaSCO</a>
-            </div>
-          </div>
-        </div>
-
-        <hr class="simple-sep">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="web/img/logos/dossiersco-cut.png" height="200px">
-          </div>
-          <div class="col-sm-8">
-            <h3>DossierSCO : gérer d'un bout à l'autre les inscriptions des élèves.</h3>
-            <blockquote>“ Enfin une vision en temps réel du remplissage des groupes et des classes. Fini le stress du dépassement des capacités d'accueil ! ”
-              <footer>Sylvie CHARBONNEL, Lycée Guillaume APOLLINAIRE, Thiais (94)</footer>
-            </blockquote>
-            <div class="text-right">
-              <a class="btn" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20DossierSCO">Nous contacter à propos de DossierSCO</a>
-            </div>
-          </div>
+    <div class="container">
+      <div class="content">
+        <blockquote>“ Depuis qu'on a installé GEMASCO, chaque élève a ses manuels en propre. Et quand un prof ramène un livre perdu, on sait tout de suite à qui il est. ”
+          <footer>Stéphane FRANCHETTI, Lycée Pauline ROLAND, Chevilly-Larue (94)</footer>
+        </blockquote>
+        <div class="text-right">
+          <a class="btn btn-primary" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20GemaSCO">Nous contacter à propos de GemaSCO</a>
         </div>
       </div>
     </div>
 
-    <div class="my-section" id="changement">
-      <h2>Les méthodes de changement</h2>
+    <div class="my-section-subtitle dossiersco">
+      <div class="container">
+        <img src="web/img/DossierSCO.png">
+        <h3>Gérer d'un bout à l'autre les inscriptions des élèves</h3>
+      </div>
+    </div>
+    <div class="container">
       <div class="content">
-        <div class="container">
-          <h3>Le pôle administratif en collège et lycée, c'est compliqué… ou pas !</h3>
-          <p>
-            On se fait souvent toute une histoire de la mise en place d'un pôle administratif : les agents craignent de voir leurs compétences se dissoudre dans une polyvalence généralisée, les cadres ont peur de voir disparaître leur secrétariat… Et vous avez raison de craindre un changement brutal.
-          </p>
-          <p>
-            Pourtant, vous êtes tous témoin d'irritants réguliers et vous avez tous en tête des idées d'amélioration. Nous vous fournissons la méthode pour les mettre en œuvre.
-          </p>
-          <h3>Par où commencer ?</h3>
-          <p>
-            Trois leviers sont disponibles pour passer en mode "pôle", utilisables simultanément ou de manière isolée.
-            <ul>
-              <li>On peut <strong>jouer sur les locaux</strong> : déplacer les agents, modifier la disposition des bureaux ; organiser un des plages communes d'accueil et des temps de retrait pour que les agents se consacrent à la partie technique de leurs missions.</li>
-              <li>On peut <strong>répartir autrement les dossiers</strong>, en confiant la responsabilité à un même agent, par delà le cloisonnement antérieur intendance/administration/ vie scolaire. La gestion des bourses, des aides, des voyages scolaires se prête particulièrement à cet exercice.</li>
-              <li>On peut aussi travailler en pôle <strong>sur des campagnes collectives ponctuelles</strong> (distribution des manuels, inscription des élèves), en faisant travailler ensemble les personnels et non plus de façon juxtaposée.</li>
-            </ul>
-          </p>
-          <br><br>
-          <div class="text-left">
-              <a class="btn" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20le%20Pôle%20Administratif">En savoir plus sur le Pôle Administratif</a>
-            </div>
+        <blockquote>“ Enfin une vision en temps réel du remplissage des groupes et des classes. Fini le stress du dépassement des capacités d'accueil ! ”
+          <footer>Sylvie CHARBONNEL, Lycée Guillaume APOLLINAIRE, Thiais (94)</footer>
+        </blockquote>
+        <div class="text-right">
+          <a class="btn btn-primary" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20DossierSCO">Nous contacter à propos de DossierSCO</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="my-section" id="qui-sommes-nous">
-      <h2>Qui sommes-nous ?</h2>
-      <div class="content">
-        <div class="container">
-          <p>
-            Nous sommes un collectif interacadémique et intercatégoriel de personnels de l'Education nationale (direction, administration et inspection), réunis autour des projets du concours <a href="http://www.education.gouv.fr/cid65743/impulsions-le-prix-de-l-action-administrative-innovante.html">IMPULSIONS</a>.
-          </p>
-          <p>
-            Avec le soutien du <a href="http://www.modernisation.gouv.fr/le-sgmap">SGMAP</a>, nous assurons la promotion de solutions organisationnelles et logicielles qui partagent les valeurs de la modernisation, en établissements et en services déconcentrés.
-          </p>
-          <br>
-          <div class="text-left">
-              <a class="btn" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20Open%20Academie">En savoir plus sur Open Academie</a>
-            </div>
-        </div>
+  <div class="my-section" id="changement">
+    <div class="my-section-title changement">
+      <div class="container">
+        <h2>Les méthodes de changement</h2>
+      </div>
+    </div>
+
+    <div class="my-section-subtitle subtitle-changement">
+      <div class="container">
+        <h3>Le pôle administratif en collège et lycée, c'est compliqué… ou pas !</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-changement">
+        <p>
+          On se fait souvent toute une histoire de la mise en place d'un pôle administratif : les agents craignent de voir leurs compétences se dissoudre dans une polyvalence généralisée, les cadres ont peur de voir disparaître leur secrétariat… Et vous avez raison de craindre un changement brutal.
+        </p>
+        <p>
+          Pourtant, vous êtes tous témoin d'irritants réguliers et vous avez tous en tête des idées d'amélioration. Nous vous fournissons la méthode pour les mettre en œuvre.
+        </p>
+      </div>
+    </div>
+
+    <div class="my-section-subtitle subtitle-changement">
+      <div class="container">
+        <h3>Par où commencer ?</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-changement">
+        <p>
+          Trois leviers sont disponibles pour passer en mode "pôle", utilisables simultanément ou de manière isolée.
+          <ul>
+            <li>On peut <strong>jouer sur les locaux</strong> : déplacer les agents, modifier la disposition des bureaux ; organiser un des plages communes d'accueil et des temps de retrait pour que les agents se consacrent à la partie technique de leurs missions.</li>
+            <li>On peut <strong>répartir autrement les dossiers</strong>, en confiant la responsabilité à un même agent, par delà le cloisonnement antérieur intendance/administration/ vie scolaire. La gestion des bourses, des aides, des voyages scolaires se prête particulièrement à cet exercice.</li>
+            <li>On peut aussi travailler en pôle <strong>sur des campagnes collectives ponctuelles</strong> (distribution des manuels, inscription des élèves), en faisant travailler ensemble les personnels et non plus de façon juxtaposée.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-section" id="changement">
+    <div class="my-section-title qui-sommes-nous">
+      <div class="container">
+        <h2>Qui sommes-nous ?</h2>
+      </div>
+    </div>
+  
+    <div class="content">
+      <div class="container">
+        <p>
+          Nous sommes un collectif interacadémique et intercatégoriel de personnels de l'Education nationale (direction, administration et inspection), réunis autour des projets du concours <a href="http://www.education.gouv.fr/cid65743/impulsions-le-prix-de-l-action-administrative-innovante.html">IMPULSIONS</a>.
+        </p>
+        <p>
+          Avec le soutien du <a href="http://www.modernisation.gouv.fr/le-sgmap">SGMAP</a>, nous assurons la promotion de solutions organisationnelles et logicielles qui partagent les valeurs de la modernisation, en établissements et en services déconcentrés.
+        </p>
+        <br>
+        <div class="text-left">
+            <a class="btn btn-primary" href="mailto:pierre.de-maulmont@ac-creteil.fr?subject=Questions%20sur%20Open%20Academie">En savoir plus sur Open Academie</a>
+          </div>
       </div>
     </div>
   </div>

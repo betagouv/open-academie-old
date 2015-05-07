@@ -6,7 +6,7 @@
 .open-ac-subheader {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .open-ac-subheader h1 {
@@ -88,30 +88,77 @@ ul.logos li {
 }
 
 .my-section {
-  border-bottom: 1px solid whitesmoke;
-  padding-bottom: 0 !important;
-  background-color: rgba(255, 255, 255, 0.40);
   margin-bottom: 30px;
-  -webkit-box-shadow: 0 1px 3px #999;
-  -moz-box-shadow: 0 1px 3px #999;
-  box-shadow: 0 1px 3px #999;
-  color: 0 1px 3px #999;
 }
 
-.my-section h2 {
-  border-bottom: none;
-  padding: 0;
+.my-section-title {
+  padding: 40px 0;
   margin: 0;
-  padding: 20px 10px 10px 10px;
 }
 
-.my-section h3 {
+.my-section-title.valeurs {
+  background-color: rgb(72, 139, 215);
+}
+
+.my-section-title.outils {
+  background-color: rgb(131, 115, 249);
+}
+
+.my-section-title.changement {
+  background-color: rgb(249, 115, 115);
+}
+
+.my-section-title.qui-sommes-nous {
+  background-color: rgb(72, 139, 215);
+}
+
+.my-section-title h2 {
   font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 3em;
+  margin: 0;
+  color: white;
+  border-bottom: none;
+}
+
+.my-section-subtitle {
+  font-size: 1.2em;;
+  padding: 35px 0;
+  margin: 0;
+}
+
+.my-section-subtitle h3 {
+  font-weight: 600;
+  margin: 0;
+  color: white;
+  border-bottom: none;
+  font-size: 1.3em;
+}
+
+.my-section-subtitle.mobilisco {
+  background-color: rgb(165, 147, 253);
+}
+
+.my-section-subtitle.gemasco {
+  background-color: rgb(94, 144, 224);
+}
+
+.my-section-subtitle.dossiersco {
+  background-color: rgb(70, 180, 79);
+}
+
+.my-section-subtitle.subtitle-changement {
+  background-color: rgb(245, 138, 138);
+}
+
+.my-section-subtitle img {
+  height: 50px;
+  float: left;
+  padding-right: 35px;
 }
 
 .my-section p {
   font-size: 1.8rem;
+  margin: 0 0 20px;
 }
 
 .my-section li {
@@ -126,29 +173,21 @@ ul.logos li {
   justify-content: flex-start;
 
   background-color: white;
-  padding: 10px 0;
-  border-top: 1px solid #E8E8E8;
-  padding: 20px;
+  padding: 90px 0;
 }
 
-.my-section .content-outils {
-  display: block;
-  background-color: white;
-  padding: 10px 0;
-  border-top: 1px solid #E8E8E8;
-  padding: 20px;
+.my-section .content-changement {
+  padding: 40px 0 20px 0;
+}
+
+.my-section .media {
+  padding-top: 40px;
+  margin: auto;
 }
 
 .blockquote-reverse {
   text-align: right;
 }
-
-.my-section .content .description {
-  width: 50%;
-  flex-grow: 1;
-  margin-right: 10px;
-}
-
 
 .simple-sep {
   border: 0;
@@ -158,6 +197,19 @@ ul.logos li {
 
 #input-name {
   width: 280px;
+}
+
+blockquote.valeurs {
+  margin-top: 65px;
+  background-color: #F9F9F9;
+}
+
+blockquote.valeurs .fa-quote-left {
+  margin-right: 15px;
+}
+
+blockquote.valeurs .fa-quote-right {
+  margin-left: 15px;
 }
 
 /*** Mobile ***/
