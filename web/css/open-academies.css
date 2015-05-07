@@ -100,6 +100,11 @@
   font-size: 1.8rem;
 }
 
+.my-section li {
+  font-size: 1.8rem;
+  padding: 3px 0 3px 0;
+}
+
 .my-section .content {
   display:flex;
   flex-direction: row;
