@@ -31,6 +31,20 @@
   font-size: 1.3em;
 }
 
+ul.logos {
+  list-style: none;
+  margin: 0;
+}
+
+ul.logos li {
+  margin-right: 15px;
+  float: left;
+}
+
+.jumbotron {
+  background-image: url('../img/skate2.jpg');
+}
+
 .my-service-wrapper {
   display: inline-block;
   width: 100%;
@@ -135,22 +149,6 @@
   margin-right: 10px;
 }
 
-@media (min-width: 768px) {
-  .nav-section {
-    padding: 30px 0;
-  }
-}
-
-ul.logos {
-  float: right;
-  list-style: none;
-  margin: 0;
-}
-
-ul.logos li {
-  margin-right: 15px;
-  float: left;
-}
 
 .simple-sep {
   border: 0;
@@ -160,4 +158,42 @@ ul.logos li {
 
 #input-name {
   width: 280px;
+}
+
+/*** Mobile ***/
+@media (max-width: 640px) {
+  ul.logos img {
+    height: 30px;
+  }
+}
+
+/*** Tablets ***/
+@media (min-width: 640px) and (max-width: 768px) {
+  ul.logos img {
+    height: 45px;
+  }
+}
+
+/*** Desktop ***/
+@media (min-width: 768px) {
+  ul.logos img {
+    height: 55px;
+  }
+
+  .nav-section {
+    padding: 30px 0;
+  }
+
+  .jumbotron {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+/*** Sumo ***/
+@media (min-width: 1024px) {
+  ul.logos img {
+    height: 65px;
+  }
 }
