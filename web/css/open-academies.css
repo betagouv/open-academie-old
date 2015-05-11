@@ -200,7 +200,9 @@ ul.logos li {
 }
 
 #input-name {
+  display: inline-block;
   width: 280px;
+  height: 60px;
 }
 
 blockquote.valeurs {
@@ -226,6 +228,11 @@ blockquote.valeurs .fa-quote-right {
   background-image: url('../img/background-ecailles.png');
   background-attachment: fixed;
   margin-bottom: 0;
+}
+
+.btn-primary {
+  font-size: 1.4em;
+  padding: 15px 30px;
 }
 
 .sub-section {
