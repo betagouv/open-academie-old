@@ -101,15 +101,18 @@ ul.logos li {
 }
 
 .my-section-title.outils {
-  background-color: rgb(131, 115, 249);
+  /*background-color: rgb(131, 115, 249);*/
+  background-color: rgb(72, 139, 215);
 }
 
 .my-section-title.changement {
-  background-color: rgb(249, 115, 115);
+  /*background-color: rgb(249, 115, 115);*/
+  background-color: rgb(72, 139, 215);
 }
 
 .my-section-title.qui-sommes-nous {
-  background-color: rgb(72, 139, 215);
+  /*background-color: rgb(72, 139, 215);*/
+  background-color: rgb(77, 82, 88);
 }
 
 .my-section-title h2 {
@@ -154,7 +157,8 @@ ul.logos li {
 }
 
 .my-section-subtitle.subtitle-changement {
-  background-color: rgb(245, 138, 138);
+  /*background-color: rgb(245, 138, 138);*/
+  background-color: rgb(77, 152, 237);
 }
 
 .my-section-subtitle img {
@@ -249,7 +253,7 @@ blockquote.valeurs .fa-quote-right {
 }
 
 .form-actions {
-  text-align: center;
+  text-align: right;
   padding-top: 30px;
 }
 
