@@ -222,6 +222,12 @@ blockquote.valeurs .fa-quote-right {
   margin-bottom: 0;
 }
 
+#changement {
+  background-image: url('../img/background-ecailles.png');
+  background-attachment: fixed;
+  margin-bottom: 0;
+}
+
 .sub-section {
   margin: 30px 0;
   background-color: white;
