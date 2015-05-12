@@ -218,6 +218,14 @@ blockquote.valeurs .fa-quote-right {
     height: 30px;
   }
 
+  .section-title h2 {
+    font-size: 1.7em;
+  }
+
+  .sub-section-title h3 {
+    font-size: 1.1em;
+  }
+
   .sub-section-title img {
     flex: 3;
   }
@@ -239,6 +247,22 @@ blockquote.valeurs .fa-quote-right {
   .btn-primary {
     font-size: 1em;
     padding: 5px 10px;
+  }
+
+  blockquote {
+    padding: 10px;
+    margin: 0 0 20px;
+    font-size: 1.2em;
+    border-left: 5px solid #eee;
+    line-height: initial;
+  }
+
+  blockquote.valeurs {
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 0px;
   }
 }
 
