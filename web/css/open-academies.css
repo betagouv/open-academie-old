@@ -41,10 +41,6 @@ ul.logos li {
 
 /*** Sections ***/
 
-.section {
-  margin-bottom: 30px;
-}
-
 .section-title {
   padding: 20px 15px;
   margin: 0;
@@ -204,6 +200,16 @@ blockquote.valeurs .fa-quote-right {
   background-image: url('../img/background-ecailles.png');
   background-attachment: fixed;
   margin-bottom: 0;
+}
+
+#qui-sommes-nous .content {
+  margin-bottom: 0;
+  color: white;
+  background-color: rgb(91, 97, 107);
+}
+
+#qui-sommes-nous p a {
+  color: #66C5FF;
 }
 
 /*** Mobile ***/
