@@ -77,7 +77,8 @@ ul.logos li {
 
 .section li {
   font-size: 1.8rem;
-  padding: 3px 0 3px 0;
+  padding: 5px 0 5px 0;
+  line-height: normal;
 }
 
 .section .content {
@@ -119,7 +120,7 @@ ul.logos li {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   -webkit-align-items: center;
           align-items: center;
 }
