@@ -168,6 +168,10 @@ ul.logos li {
   padding-top: 30px;
 }
 
+.savoir-plus {
+  text-align: left;
+}
+
 blockquote.valeurs {
   margin-top: 65px;
   background-color: #F9F9F9;
@@ -233,6 +237,11 @@ blockquote.valeurs .fa-quote-right {
 
   .form-actions {
     text-align: center;
+  }
+
+  .savoir-plus {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   #input-name {
