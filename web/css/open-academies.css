@@ -155,7 +155,7 @@ ul.logos li {
   max-height: 50px;
   max-width: 100%;
   width: auto;
-  flex: 1;
+  flex: 0 1 auto;
 }
 
 .btn-primary {
@@ -227,12 +227,12 @@ blockquote.valeurs .fa-quote-right {
     font-size: 1.7em;
   }
 
-  .sub-section-title h3 {
-    font-size: 1.1em;
+  .sub-section-title {
+    flex-direction: column;
   }
 
-  .sub-section-title img {
-    flex: 3;
+  .sub-section-title h3 {
+    font-size: 1.1em;
   }
 
   .form-actions {
