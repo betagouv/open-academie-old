@@ -114,7 +114,7 @@
                                             Cette liberté est matérialisée par la licence GPL,
                                             utilisée par la majorité des logiciels libres (Linux, Firefox, Libre Office...).</p>
                                         <h2>Comment ça marche ?</h2>
-                                        <ul><li><form id="input-form2" action="" method="POST" target="no-target" class="form-inline">
+                                        <ul><li><form id="input-form3" action="" method="POST" target="no-target" class="form-inline">
                                                     <button  id="form-submit" class="btn btn-primary" type="submit">Télécharger Mobilisco</button>
                                                 </form></li>
                                             <li>Importer la base élèves.</li>
@@ -203,6 +203,11 @@
 
             });
             $('#input-form2').one('submit', function () {
+                window.open('MOBILISCO V5.7.mdb', '_blank');
+
+            });
+
+            $('#input-form3').one('submit', function () {
                 window.open('MOBILISCO V5.7.mdb', '_blank');
 
             });
