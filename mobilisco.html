@@ -69,7 +69,8 @@
                                             <li>Le suivi des encaissements sur un document unique,</li>
                                             <li>L'édition de listes et documents individuels en tout genre : ordres de mission, listes d'embarquement, attestations de versement pour comité d'entreprise, bordereaux de chèques, arrêtés de régies…</li></ul>
                                         <form id="input-form2" action="" method="POST" target="no-target" class="form-inline">
-                                            <div class="col-sm-8 col-lg-offset-4">
+                                            <div class="col-sm-10 col-lg-offset-2">
+                                                <input id="input-name" class="form-control" placeholder="Code Etablissement ou Adresse Email " type="text" name="name" size="45" required>
                                                 <button style="margin-bottom: 20px; margin-top: 20px;" id="form-submit" class="btn btn-primary" type="submit">Télécharger Mobilisco</button>
                                             </div>
                                         </form>
@@ -115,7 +116,8 @@
                                             utilisée par la majorité des logiciels libres (Linux, Firefox, Libre Office...).</p>
                                         <h2>Comment ça marche ?</h2>
                                         <ul><li><form id="input-form3" action="" method="POST" target="no-target" class="form-inline">
-                                                    <button  id="form-submit" class="btn btn-primary" type="submit">Télécharger Mobilisco</button>
+                                                    <input id="input-name" class="form-control" placeholder="Code Etablissement ou Adresse Email " type="text" name="name" size="45" required>
+                                                    <button id="form-submit" class="btn btn-primary" type="submit">Télécharger Mobilisco</button>
                                                 </form></li>
                                             <li>Importer la base élèves.</li>
                                             <li>Saisir les constantes de votre établissement.</li>
@@ -203,11 +205,25 @@
 
             });
             $('#input-form2').one('submit', function () {
+                var etablissementCode = $('#input-name2');
+                var inputName = encodeURIComponent(etablissementCode.val());
+                var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
+                var submitRef = '&submit=submit';
+                var submitURL = (baseURL + inputName + submitRef);
+                console.log(submitURL);
+                $(this)[0].action = submitURL;
                 window.open('MOBILISCO V5.7.mdb', '_blank');
 
             });
 
             $('#input-form3').one('submit', function () {
+                var etablissementCode = $('#input-name3');
+                var inputName = encodeURIComponent(etablissementCode.val());
+                var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
+                var submitRef = '&submit=submit';
+                var submitURL = (baseURL + inputName + submitRef);
+                console.log(submitURL);
+                $(this)[0].action = submitURL;
                 window.open('MOBILISCO V5.7.mdb', '_blank');
 
             });
