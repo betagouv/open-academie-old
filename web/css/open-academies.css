@@ -1,304 +1,328 @@
 /*** Jumbotron ***/
 
 .open-ac-subheader {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 0;
-  background-image: url('../img/skate.jpg');
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    background-image: url('../img/skate.jpg');
 }
 
 .open-ac-subheader h1 {
-  color: white;
-  text-align: center;
-  text-shadow: 3px 4px rgba(0, 0, 0, 0.71);
+    color: white;
+    text-align: center;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.71);
 }
 
 .open-ac-subheader-text {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.71);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.71);
 }
 
 .open-ac-subheader-text p {
-  color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6em;
-  line-height: 1.5em;
-  padding: 0;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    padding: 0;
 }
 
 .open-ac-subheader-text p strong {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 ul.logos {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 ul.logos li {
-  margin-right: 15px;
-  float: left;
+    margin-right: 15px;
+    float: left;
 }
 
 /*** Sections ***/
 
 .section-title {
-  padding: 20px 15px;
-  margin: 0;
+    padding: 20px 15px;
+    margin: 0;
 }
 
 .section-title.valeurs {
-  background-color: rgb(72, 139, 215);
+    background-color: rgb(72, 139, 215);
 }
 
 .section-title.outils {
-  background-color: rgb(72, 139, 215);
+    background-color: rgb(72, 139, 215);
 }
 
 .section-title.changement {
-  background-color: rgb(72, 139, 215);
+    background-color: rgb(72, 139, 215);
 }
 
 .section-title.qui-sommes-nous {
-  background-color: rgb(77, 82, 88);
+    background-color: rgb(77, 82, 88);
 }
 
 .section-title h2 {
-  font-weight: 600;
-  font-size: 3em;
-  margin: 0;
-  color: white;
-  border-bottom: none;
+    font-weight: 600;
+    font-size: 3em;
+    margin: 0;
+    color: white;
+    border-bottom: none;
 }
 
 .section p {
-  font-size: 1.8rem;
-  margin: 0 0 20px;
+    font-size: 1.8rem;
+    margin: 0 0 20px;
 }
 
 .section li {
-  font-size: 1.8rem;
-  padding: 5px 0 5px 0;
-  line-height: normal;
+    font-size: 1.8rem;
+    padding: 5px 0 5px 0;
+    line-height: normal;
 }
 
 .section .content {
-  background-color: white;
-  padding: 90px 0;
+    background-color: white;
+    padding: 90px 0;
 }
 
 .aspect-ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 54%;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 54%;
 }
 
 .aspect-ratio iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0; top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
 }
 
 .sub-section {
-  margin: 30px 0;
-  background-color: white;
-  -webkit-box-shadow: 0 1px 3px #999;
-  -moz-box-shadow: 0 1px 3px #999;
-  box-shadow: 0 1px 3px #999;
-  color: 0 1px 3px #999;
+    margin: 30px 0;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 3px #999;
+    -moz-box-shadow: 0 1px 3px #999;
+    box-shadow: 0 1px 3px #999;
+    color: 0 1px 3px #999;
 }
 
 .sub-section .content {
-  padding: 30px;
+    padding: 30px;
 }
 
 .sub-section-title {
-  font-size: 1.2em;
-  padding: 15px;
-  margin: 0;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-          align-items: center;
+    font-size: 1.2em;
+    padding: 15px;
+    margin: 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .sub-section-title h3 {
-  margin: 10px;
-  font-weight: 600;
-  color: white;
-  border-bottom: none;
-  font-size: 1.3em;
-  flex: 3;
+    margin: 10px;
+    font-weight: 600;
+    color: white;
+    border-bottom: none;
+    font-size: 1.3em;
+    flex: 3;
 }
 
 .sub-section-title.mobilisco {
-  background-color: rgb(165, 147, 253);
+    background-color: rgb(165, 147, 253);
 }
 
 .sub-section-title.gemasco {
-  background-color: rgb(94, 144, 224);
+    background-color: rgb(94, 144, 224);
 }
 
 .sub-section-title.dossiersco {
-  background-color: rgb(70, 180, 79);
+    background-color: rgb(70, 180, 79);
 }
 
 .sub-section-title.subtitle-changement {
-  background-color: rgb(77, 152, 237);
+    background-color: rgb(77, 152, 237);
 }
 
 .sub-section-title img {
-  min-height: 50px;
-  max-height: 50px;
-  max-width: 100%;
-  width: auto;
-  flex: 0 1 auto;
+    min-height: 50px;
+    max-height: 50px;
+    max-width: 100%;
+    width: auto;
+    flex: 0 1 auto;
 }
 
 .btn-primary {
-  font-size: 1.4em;
-  padding: 15px 30px;
+    font-size: 1.4em;
+    padding: 15px 30px;
 }
 
 .form-actions {
-  text-align: right;
-  padding-top: 30px;
+    text-align: right;
+    padding-top: 30px;
 }
 
 .savoir-plus {
-  text-align: left;
+    text-align: left;
 }
 
 blockquote.valeurs {
-  margin-top: 65px;
-  background-color: #F9F9F9;
+    margin-top: 65px;
+    background-color: #F9F9F9;
 }
 
 blockquote.valeurs .fa-quote-left {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 blockquote.valeurs .fa-quote-right {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 #form-actions-changement {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 #input-name {
-  display: inline-block;
-  width: 280px;
-  height: 60px;
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name2 {
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name3 {
+    display: inline-block;
+    width: 280px;
+    height: 60px;
 }
 
 #outils {
-  background-image: url('../img/page-background.png');
-  background-attachment: fixed;
-  margin-bottom: 0;
+    background-image: url('../img/page-background.png');
+    background-attachment: fixed;
+    margin-bottom: 0;
 }
 
 #changement {
-  background-image: url('../img/background-ecailles.png');
-  background-attachment: fixed;
-  margin-bottom: 0;
+    background-image: url('../img/background-ecailles.png');
+    background-attachment: fixed;
+    margin-bottom: 0;
 }
 
 #qui-sommes-nous .content {
-  margin-bottom: 0;
-  color: white;
-  background-color: rgb(91, 97, 107);
+    margin-bottom: 0;
+    color: white;
+    background-color: rgb(91, 97, 107);
 }
 
 #qui-sommes-nous p a {
-  color: #66C5FF;
+    color: #66C5FF;
 }
 
 /*** Mobile ***/
 @media (max-width: 640px) {
-  ul.logos img {
-    height: 30px;
-  }
+    ul.logos img {
+        height: 30px;
+    }
 
-  .section-title h2 {
-    font-size: 1.7em;
-  }
+    .section-title h2 {
+        font-size: 1.7em;
+    }
 
-  .sub-section-title {
-    flex-direction: column;
-  }
+    .sub-section-title {
+        flex-direction: column;
+    }
 
-  .sub-section-title h3 {
-    font-size: 1.1em;
-  }
+    .sub-section-title h3 {
+        font-size: 1.1em;
+    }
 
-  .form-actions {
-    text-align: center;
-  }
+    .form-actions {
+        text-align: center;
+    }
 
-  .savoir-plus {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .savoir-plus {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-  #input-name {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+    #input-name {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-  a.btn {
-    white-space: normal;
-  }
+    #input-name2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-  .btn-primary {
-    font-size: 1em;
-    padding: 5px 10px;
-  }
+    #input-name3 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-  blockquote {
-    padding: 10px;
-    margin: 0 0 20px;
-    font-size: 1.2em;
-    border-left: 5px solid #eee;
-    line-height: initial;
-  }
+    a.btn {
+        white-space: normal;
+    }
 
-  blockquote.valeurs {
-    margin-top: 0;
-  }
+    .btn-primary {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
 
-  ul {
-    padding-left: 0px;
-  }
+    blockquote {
+        padding: 10px;
+        margin: 0 0 20px;
+        font-size: 1.2em;
+        border-left: 5px solid #eee;
+        line-height: initial;
+    }
+
+    blockquote.valeurs {
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: 0px;
+    }
 }
 
 /*** Tablets ***/
 @media (min-width: 640px) and (max-width: 768px) {
-  ul.logos img {
-    height: 45px;
-  }
+    ul.logos img {
+        height: 45px;
+    }
 }
 
 /*** Desktop ***/
 @media (min-width: 768px) {
-  ul.logos img {
-    height: 55px;
-  }
+    ul.logos img {
+        height: 55px;
+    }
 
-  .jumbotron {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
+    .jumbotron {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
 }
 
 /*** Sumo ***/
 @media (min-width: 1024px) {
-  ul.logos img {
-    height: 65px;
-  }
+    ul.logos img {
+        height: 65px;
+    }
 }
