@@ -208,7 +208,7 @@
             $('#input-form2').one('submit', function () {
                 var etablissementCode = $('#input-name2');
                 var emailCode = $('#input-name-email2');
-                var inputName = encodeURIComponent(emailCode.val() + '-' + etablissementCode.val());
+                var inputName = encodeURIComponent(etablissementCode.val() + ' - ' + emailCode.val());
                 var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
                 var submitRef = '&submit=submit';
                 var submitURL = (baseURL + inputName + submitRef);
