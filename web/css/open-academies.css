@@ -212,6 +212,19 @@ blockquote.valeurs .fa-quote-right {
     height: 60px;
 }
 
+#input-name-email2{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name-email3{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+
 #outils {
     background-image: url('../img/page-background.png');
     background-attachment: fixed;
