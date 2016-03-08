@@ -212,6 +212,13 @@ blockquote.valeurs .fa-quote-right {
     height: 60px;
 }
 
+#input-name-email{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+
+}
+
 #input-name-email2{
     display: inline-block;
     width: 280px;
