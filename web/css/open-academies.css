@@ -151,6 +151,10 @@ ul.logos li {
     background-color: rgb(70, 180, 79);
 }
 
+.sub-section-title.bourse {
+    background-color: rgb(255, 196, 27);
+}
+
 .sub-section-title.subtitle-changement {
     background-color: rgb(77, 152, 237);
 }
