@@ -54,6 +54,10 @@ ul.logos li {
     background-color: #A593FD;
 }
 
+.section-title.valeurs_gemasco{
+    background-color: rgb(94, 144, 224);
+}
+
 
 .section-title.outils {
     background-color: rgb(72, 139, 215);
@@ -139,7 +143,7 @@ ul.logos li {
     justify-content: flex-start;
     -webkit-align-items: center;
     align-items: center;
-    background-color: rgb(137, 149, 138)
+    background-color: rgb(38, 199, 218);
 }
 
 .sub-section .content1 {
@@ -281,6 +285,17 @@ blockquote.valeurs .fa-quote-right {
     height: 60px;
 }
 
+#input-name-cogefi{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name-email-cogefi{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
 
 #outils {
     background-image: url('../img/page-background.png');
@@ -401,3 +416,4 @@ blockquote.valeurs .fa-quote-right {
         height: 65px;
     }
 }
+
