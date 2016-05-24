@@ -211,9 +211,20 @@
                                 </blockquote>
                             </div>
                         </div>
+                                               
                         <div class="form-actions">
-                            <a class="btn btn-primary" href="http://www.espaceple.org/spip.php?article272">En savoir plus sur Cogefi</a>
+                            <div class="row">
+                                <a class="btn btn-primary savoir-plus pull-left" href="http://www.espaceple.org/spip.php?article272">Plus d'informations...</a>
+
+                                <form id="input-form-cogefi" action="" method="POST" target="no-target" class="form-inline">
+                                    <input id="input-name-cogefi" class="form-control" placeholder="Code Etablissement " type="text" name="name" size="45" required>
+                                    <input id="input-name-email-cogefi" class="form-control" placeholder=" Adresse Email " type="text" name="name" size="45" required>
+                                    <br/><br/><button id="form-submit-cogefi" class="btn btn-primary" type="submit">Télécharger Cogefi V16.10</button>
+                                </form>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
 
@@ -452,6 +463,20 @@
             $(this)[0].action = submitURL;
             console.log('done');
             window.location.assign('MOBILISCO V5.7.mdb');
+        });
+    </script>
+        <script>
+        $('#input-form-cogefi').one('submit', function () {
+            var etablissementCodecogefi = $('#input-name-cogefi');
+            var emailCodecogefi = $('#input-name-email-cogefi');
+            var inputName = encodeURIComponent(etablissementCodecogefi.val() + ' - ' + emailCodecogefi.val() + ' - ' + 'telechargement depuis la page principale');
+            var baseURL = 'https://docs.google.com/forms/d/1Fsf8ITt2ZTjPmxx43h6kQvIfaLqnK-JoLBY8EkaelXw/formResponse?entry.551798432=';
+            var submitRef = '&submit=submit';
+            var submitURL = (baseURL + inputName + submitRef);
+            console.log(submitURL);
+            $(this)[0].action = submitURL;
+            console.log('done');
+            window.location.assign('COGEFI V16.10.zip');
         });
     </script>
 
