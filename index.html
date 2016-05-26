@@ -470,10 +470,13 @@
         $('#input-form-cogefi').one('submit', function () {
             var etablissementCodecogefi = $('#input-name-cogefi');
             var emailCodecogefi = $('#input-name-email-cogefi');
-            var inputName = encodeURIComponent(etablissementCodecogefi.val() + ' - ' + emailCodecogefi.val() + ' - ' + 'telechargement depuis la page principale');
+            var rne = encodeURIComponent(etablissementCodecogefi.val());
+            var email = encodeURIComponent(emailCodecogefi.val());
+            var page = encodeURIComponent('telechargement depuis la page principale');       
             var baseURL = 'https://docs.google.com/forms/d/1Fsf8ITt2ZTjPmxx43h6kQvIfaLqnK-JoLBY8EkaelXw/formResponse?entry.551798432=';
+            console.log(baseURL);
             var submitRef = '&submit=submit';
-            var submitURL = (baseURL + inputName + submitRef);
+            var submitURL = (baseURL + rne + '&entry.363200688=' + email + '&entry.1506732456=' + page + submitRef);           
             console.log(submitURL);
             $(this)[0].action = submitURL;
             console.log('done');
