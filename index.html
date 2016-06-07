@@ -212,7 +212,7 @@
                                 </blockquote>
                             </div>
                         </div>
-                                               
+
                         <div class="form-actions">
                             <div class="row">
                                 <a class="btn btn-primary savoir-plus pull-left" href="http://www.espaceple.org/spip.php?article272">Plus d'informations...</a>
@@ -224,8 +224,8 @@
                                 </form>
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
 
@@ -295,9 +295,11 @@
                             </div>
                         </div>
                         <div class="form-actions">
-                            <a class="btn btn-primary" href="mailto:openacademie@sgmap.fr?subject=Questions%20sur%20GemaSCO">Nous contacter à propos de GemaSCO</a><br/><br/>
-                            <a class="btn btn-primary" href="mailto:openacademie@sgmap.fr?subject=Je%20souhaite%20participer%20au%20test%20de%20la%20version%20beta%20de%20Gemasco">Je souhaite participer au test de la version beta de GemaSCO</a>
-                        </div>
+                            <div class="row">
+                                <a class="btn btn-primary savoir-plus pull-left" href="gemasco.html">Plus d'informations...</a>
+                                <a class="btn btn-primary" href="mailto:openacademie@sgmap.fr?subject=Questions%20sur%20GemaSCO">Nous contacter à propos de GemaSCO</a><br/><br/>
+                            </div>
+                        </div> 
                     </div>
                 </div>
 
@@ -467,17 +469,17 @@
             window.location.assign('MOBILISCO V5.7.mdb');
         });
     </script>
-        <script>
+    <script>
         $('#input-form-cogefi').one('submit', function () {
             var etablissementCodecogefi = $('#input-name-cogefi');
             var emailCodecogefi = $('#input-name-email-cogefi');
             var rne = encodeURIComponent(etablissementCodecogefi.val());
             var email = encodeURIComponent(emailCodecogefi.val());
-            var page = encodeURIComponent('telechargement depuis la page principale');       
+            var page = encodeURIComponent('telechargement depuis la page principale');
             var baseURL = 'https://docs.google.com/forms/d/1Fsf8ITt2ZTjPmxx43h6kQvIfaLqnK-JoLBY8EkaelXw/formResponse?entry.551798432=';
             console.log(baseURL);
             var submitRef = '&submit=submit';
-            var submitURL = (baseURL + rne + '&entry.363200688=' + email + '&entry.1506732456=' + page + submitRef);           
+            var submitURL = (baseURL + rne + '&entry.363200688=' + email + '&entry.1506732456=' + page + submitRef);
             console.log(submitURL);
             $(this)[0].action = submitURL;
             console.log('done');
