@@ -306,9 +306,14 @@
                         <div class="form-actions">
                             <div class="row">
                                 <a class="btn btn-primary savoir-plus pull-left" href="gemasco.html">Plus d'informations...</a>
-                                <a class="btn btn-primary" href="mailto:openacademie@sgmap.fr?subject=Questions%20sur%20GemaSCO">Nous contacter à propos de GemaSCO</a><br/><br/>
+
+                                <form id="input-form-gemasco" action="" method="POST" target="no-target" class="form-inline">
+                                    <input id="input-name-gemasco" class="form-control" placeholder="Code Etablissement " type="text" name="name" size="45" required>
+                                    <input id="input-name-email-gemasco" class="form-control" placeholder=" Adresse Email " type="text" name="name" size="45" required>
+                                    <br/><br/><button id="form-submit-gemasco" class="btn btn-primary" type="submit">Télécharger Gemasco V1.6</button>
+                                </form>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
@@ -495,7 +500,23 @@
             window.location.assign('COGEFI V16.10.zip');
         });
     </script>
-
+    <script>
+        $('#input-form-gemasco').one('submit', function () {
+            var etablissementCodecogefi = $('#input-name-gemasco');
+            var emailCodecogefi = $('#input-name-email-gemasco');
+            var rne = encodeURIComponent(etablissementCodecogefi.val());
+            var email = encodeURIComponent(emailCodecogefi.val());
+            var page = encodeURIComponent('telechargement depuis la page principale');
+            var baseURL = 'https://docs.google.com/forms/d/1AcTYcJrqYufC7N8SUeWzC1EpID0kprPHjTNq8Z5JOuk/formResponse?entry.1936573090=';
+            console.log(baseURL);
+            var submitRef = '&submit=submit';
+            var submitURL = (baseURL + rne + '&entry.843103382=' + email + '&entry.89190430=' + page + submitRef);
+            console.log(submitURL);
+            $(this)[0].action = submitURL;
+            console.log('done');
+            window.location.assign('GEMASCO V1.6.rar');
+        });
+    </script>
     <!-- Piwik -->
     <script type="text/javascript">
         var _paq = _paq || [];

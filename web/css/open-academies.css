@@ -57,7 +57,9 @@ ul.logos li {
 .section-title.valeurs_gemasco{
     background-color: rgb(94, 144, 224);
 }
-
+.section-title.valeurs_bourse{
+    background-color: rgb(255, 196, 27)
+}
 
 .section-title.outils {
     background-color: rgb(72, 139, 215);
@@ -292,6 +294,18 @@ blockquote.valeurs .fa-quote-right {
 }
 
 #input-name-email-cogefi{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name-gemasco{
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+}
+
+#input-name-email-gemasco{
     display: inline-block;
     width: 280px;
     height: 60px;

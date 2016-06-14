@@ -69,7 +69,13 @@
                                             <li>l'édition d'avis aux familles des livres non-rendus ou dégradés et faisant l'objet d'une facturation,</li>
                                             <li>le suivi du stock en temps réel, </li>
                                             <li>de déterminer à tout moment à qui appartient n'importe quel livre. </li></ul>
-
+                                        <form id="input-form-gemasco" action="" method="POST" target="no-target" class="form-inline">
+                                            <div class="col-sm-11 col-lg-offset-1">
+                                                <input id="input-name-gemasco" class="form-control" placeholder="Code Etablissement " type="text" name="name" size="45" required>
+                                                <input id="input-name-email-gemasco" class="form-control" placeholder="Adresse Email " type="text" name="name" size="45" required>
+                                                <button style="margin-bottom: 20px; margin-top: 20px;" id="form-submit" class="btn btn-primary" type="submit">Télécharger Gemasco V1.6</button>
+                                            </div>
+                                        </form>
                                         <p>Gemasco fonctionne sur :  Microsoft Access 2013, 2010.</p>
                                         <p>Si vous ne disposez pas de Microsoft Access vous pouvez télécharger gratuitement le Runtime Access afin de pouvoir utiliser Gemasco:</p>
                                         <form id="input-form" action="" method="POST" target="no-target" class="form-inline">
@@ -115,9 +121,9 @@
                                             utilisée par la majorité des logiciels libres (Linux, Firefox, Libre Office...).</p>
                                         <p>Pour tirer pleinement partie des fonctionnalités de GemaSCO, vous devrez vous procurer :
                                         <ul>
-                                        <li>un lecteur optique de code barre ou "douchette" avec port USB (environ 60 €)</li>
-                                        <li>des étiquettes autocollantes 63.5 x 33.9 mm, coins arrondis (feuilles de 24 étiquettes par pages, 3 colonnes x 8 lignes – 6 €HT le paquet de 2400 étiquettes)</li>
-                                        <li>des étiquettes plastiques un peu plus larges (50 x 100 mm), qui protègeront les code-barre dans les cartables des élève (26 €HT les 500)</li></ul></p>
+                                            <li>un lecteur optique de code barre ou "douchette" avec port USB (environ 60 €)</li>
+                                            <li>des étiquettes autocollantes 63.5 x 33.9 mm, coins arrondis (feuilles de 24 étiquettes par pages, 3 colonnes x 8 lignes – 6 €HT le paquet de 2400 étiquettes)</li>
+                                            <li>des étiquettes plastiques un peu plus larges (50 x 100 mm), qui protègeront les code-barre dans les cartables des élève (26 €HT les 500)</li></ul></p>
                                         <h2>Comment ça marche ?</h2>
                                         <ul>
                                             <li>Importer la base élèves.</li>
@@ -136,11 +142,11 @@
                                         <h2>Problème technique</h2>
                                         <p>Vous rencontrez un problème technique, pas de panique ! </p>
                                         <ul><li>Consultez les vidéos explicatives de la rubrique <a href="#ccm">"Comment ça marche ?"</a>.</li>
-                                        <li>Lisez la <a href="#faq">FAQ</a>.</li>
-                                        <li>Posez vos questions sur le <a target="_blank" href="http://gestionnaires.actifforum.com/f23-openacademie-et-ses-outils"> forum des gestionnaires</a>, qui est une communauté d'entraide .</li>
-                                        <li>Si vous ne trouvez pas de réponses à vos questions, veuillez remplir ce <a target="_blank" href="https://docs.google.com/forms/d/1hv9iLknfsJLShcpShST-TZwTUckh8v876aJIsfi_ClM/viewform?c=0&w=1">Formulaire</a>.</li>
-                                        
-                                    </ul>
+                                            <li>Lisez la <a href="#faq">FAQ</a>.</li>
+                                            <li>Posez vos questions sur le <a target="_blank" href="http://gestionnaires.actifforum.com/f23-openacademie-et-ses-outils"> forum des gestionnaires</a>, qui est une communauté d'entraide .</li>
+                                            <li>Si vous ne trouvez pas de réponses à vos questions, veuillez remplir ce <a target="_blank" href="https://docs.google.com/forms/d/1hv9iLknfsJLShcpShST-TZwTUckh8v876aJIsfi_ClM/viewform?c=0&w=1">Formulaire</a>.</li>
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +156,7 @@
                                 </div>
                                 <div class="content">
                                     <div class="panel-body">
-                                        <p>La version 1.0 de <strong>Gemasco</strong> apporte notamment les évolutions suivantes :</p>
+                                        <p>La version 1.6 de <strong>Gemasco</strong> apporte notamment les évolutions suivantes :</p>
                                         <ul><li></li>     
                                             <li></li></ul>
                                     </div>
@@ -205,31 +211,23 @@
                 window.open('https://www.microsoft.com/fr-fr/download/details.aspx?id=10910', '_blank');
 
             });
-            $('#input-form2').one('submit', function () {
-                var etablissementCode = $('#input-name2');
-                var emailCode = $('#input-name-email2');
-                var inputName = encodeURIComponent(etablissementCode.val() + ' - ' + emailCode.val());
-                var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
+
+            $('#input-form-gemasco').one('submit', function () {
+                var etablissementCodecogefi = $('#input-name-gemasco');
+                var emailCodecogefi = $('#input-name-email-gemasco');
+                var rne = encodeURIComponent(etablissementCodecogefi.val());
+                var email = encodeURIComponent(emailCodecogefi.val());
+                var page = encodeURIComponent('telechargement depuis la page gemasco.html');
+                var baseURL = 'https://docs.google.com/forms/d/1AcTYcJrqYufC7N8SUeWzC1EpID0kprPHjTNq8Z5JOuk/formResponse?entry.1936573090=';
+                console.log(baseURL);
                 var submitRef = '&submit=submit';
-                var submitURL = (baseURL + inputName + submitRef);
+                var submitURL = (baseURL + rne + '&entry.843103382=' + email + '&entry.89190430=' + page + submitRef);
                 console.log(submitURL);
                 $(this)[0].action = submitURL;
-                window.open('MOBILISCO V5.7.mdb', '_blank');
-
+                console.log('done');
+                window.location.assign('GEMASCO V1.6.rar', '_blank');
             });
 
-            $('#input-form3').one('submit', function () {
-                var etablissementCode = $('#input-name3');
-                var emailCode = $('#input-name-email3');
-                var inputName = encodeURIComponent(etablissementCode.val() + ' - ' + emailCode.val());
-                var baseURL = 'https://docs.google.com/forms/d/1NmOvwDBvewcF_F68_tsugW_jv_4_5aX98mVk-bajzdY/formResponse?entry.162101201=';
-                var submitRef = '&submit=submit';
-                var submitURL = (baseURL + inputName + submitRef);
-                console.log(submitURL);
-                $(this)[0].action = submitURL;
-                window.open('MOBILISCO V5.7.mdb', '_blank');
-
-            });
         </script>
 
         <!-- Piwik -->
@@ -251,26 +249,26 @@
         </script>
         <noscript><p><img src="//stats.data.gouv.fr/piwik.php?idsite=15" style="border:0;" alt="" /></p></noscript>
         <!-- End Piwik Code -->
-        
-            <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["setDomains", ["*.openacademie.beta.gouv.fr"]]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function () {
-            var u = "//stats.data.gouv.fr/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', 24]);
-            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <noscript><p><img src="//stats.data.gouv.fr/piwik.php?idsite=24" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
+
+        <!-- Piwik -->
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(["setDomains", ["*.openacademie.beta.gouv.fr"]]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//stats.data.gouv.fr/";
+                _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                _paq.push(['setSiteId', 24]);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = u + 'piwik.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <noscript><p><img src="//stats.data.gouv.fr/piwik.php?idsite=24" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
     </body>
 </html>
